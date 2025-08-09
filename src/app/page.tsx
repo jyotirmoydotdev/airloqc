@@ -145,44 +145,56 @@ function BentoGrid() {
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-white mb-2">The Problem</h3>
-                <p className="text-red-300">Critical issues plaguing Web3 authentication today</p>
+                <p className="text-red-300">Critical issues plaguing modern authentication systems</p>
               </div>
             </div>
             
             <div className="space-y-6">
               <div className="bg-red-500/10 rounded-2xl p-6 border border-red-500/20">
-                <h4 className="text-lg font-semibold text-white mb-3">Private Key Vulnerabilities</h4>
+                <h4 className="text-lg font-semibold text-white mb-3">Current Situation</h4>
                 <p className="text-gray-300 text-sm leading-relaxed mb-4">
-                  95% of crypto wallet hacks are due to private key theft, loss, or mismanagement. Users struggle with seed phrases, 
-                  hardware wallets, and complex key management - creating massive security gaps.
+                  Authentication flows demand IDs, photos, biometrics, and account numbers when verifiers often only need a yes or no. 
+                  This leaves users exposed and makes compliance a headache for businesses.
                 </p>
                 <div className="flex items-center gap-2 text-red-400 text-sm">
                   <span className="w-2 h-2 bg-red-400 rounded-full"></span>
-                  $3.8B lost to private key compromises in 2023
+                  Excessive data collection for simple verification
                 </div>
               </div>
 
               <div className="bg-red-500/10 rounded-2xl p-6 border border-red-500/20">
-                <h4 className="text-lg font-semibold text-white mb-3">Privacy Invasion</h4>
+                <h4 className="text-lg font-semibold text-white mb-3">Security Threats</h4>
                 <p className="text-gray-300 text-sm leading-relaxed mb-4">
-                  Current authentication exposes user identity, transaction history, and behavioral patterns. 
-                  KYC processes demand excessive personal data that gets breached and sold.
+                  National Identity Cards like Social Security and Aadhaar misuse stories and large data leaks show how 
+                  centralized data centers are often targeted and thus are not the way moving forward.
                 </p>
                 <div className="flex items-center gap-2 text-red-400 text-sm">
                   <span className="w-2 h-2 bg-red-400 rounded-full"></span>
-                  86% of users concerned about Web3 privacy
+                  Centralized systems are prime targets for attacks
                 </div>
               </div>
 
               <div className="bg-red-500/10 rounded-2xl p-6 border border-red-500/20">
-                <h4 className="text-lg font-semibold text-white mb-3">Poor User Experience</h4>
+                <h4 className="text-lg font-semibold text-white mb-3">The Hassle</h4>
                 <p className="text-gray-300 text-sm leading-relaxed mb-4">
-                  Complex wallet setups, gas fees for every action, multiple confirmation steps, and inconsistent 
-                  authentication across platforms create massive friction for mainstream adoption.
+                  Password resets, OTP loops, and KYC re-runs are slow and expensive. The industry is moving to passwordless 
+                  but most passkey flows still reveal more than is strictly necessary.
                 </p>
                 <div className="flex items-center gap-2 text-red-400 text-sm">
                   <span className="w-2 h-2 bg-red-400 rounded-full"></span>
-                  76% abandon apps due to complex authentication
+                  Poor UX with excessive friction and data exposure
+                </div>
+              </div>
+
+              <div className="bg-red-500/10 rounded-2xl p-6 border border-red-500/20">
+                <h4 className="text-lg font-semibold text-white mb-3">Future Threats</h4>
+                <p className="text-gray-300 text-sm leading-relaxed mb-4">
+                  Ongoing research in Quantum Cryptanalysis poses threats to data banks and can cause massive data breaches. 
+                  Current encryption methods will become vulnerable to quantum computing attacks.
+                </p>
+                <div className="flex items-center gap-2 text-red-400 text-sm">
+                  <span className="w-2 h-2 bg-red-400 rounded-full"></span>
+                  Quantum computing threatens current security
                 </div>
               </div>
             </div>
@@ -196,22 +208,37 @@ function BentoGrid() {
               </div>
               <h3 className="text-xl font-bold text-white">Our Solution</h3>
             </div>
-            <p className="text-gray-300 text-sm leading-relaxed mb-4">
-              AirLOQC's keyless zero-knowledge proof system eliminates private keys while providing 
-              superior security through biometric authentication and cryptographic proofs.
-            </p>
-            <div className="space-y-3">
-              <div className="flex items-center gap-2 text-green-400 text-sm">
-                <BsCheck2Circle />
-                <span>100% keyless authentication</span>
+            
+            <div className="space-y-4">
+              <div className="bg-green-500/10 rounded-xl p-4 border border-green-500/20">
+                <h4 className="text-sm font-semibold text-white mb-2">Zero Knowledge Proof</h4>
+                <p className="text-gray-300 text-xs leading-relaxed">
+                  Ensures enterprises receive only yes/no answers without underlying data. For age verification, 
+                  response is simply "Yes" or "No" without revealing exact DOB.
+                </p>
               </div>
-              <div className="flex items-center gap-2 text-green-400 text-sm">
-                <BsCheck2Circle />
-                <span>Zero data exposure</span>
+              
+              <div className="bg-blue-500/10 rounded-xl p-4 border border-blue-500/20">
+                <h4 className="text-sm font-semibold text-white mb-2">Post Quantum Cryptography</h4>
+                <p className="text-gray-300 text-xs leading-relaxed">
+                  Protected centralized database using PQC for key management and secure communications, 
+                  alongside strong encryption at rest.
+                </p>
               </div>
-              <div className="flex items-center gap-2 text-green-400 text-sm">
+            </div>
+            
+            <div className="space-y-2 mt-4">
+              <div className="flex items-center gap-2 text-green-400 text-xs">
                 <BsCheck2Circle />
-                <span>One-click access</span>
+                <span>Minimal data exposure</span>
+              </div>
+              <div className="flex items-center gap-2 text-green-400 text-xs">
+                <BsCheck2Circle />
+                <span>Quantum-resistant security</span>
+              </div>
+              <div className="flex items-center gap-2 text-green-400 text-xs">
+                <BsCheck2Circle />
+                <span>Reduced form-filling across websites</span>
               </div>
             </div>
           </div>
@@ -220,7 +247,7 @@ function BentoGrid() {
           <div className="md:col-span-2 lg:col-span-1 bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/20 rounded-3xl p-6">
             <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
               <GoZap className="text-yellow-400 text-2xl" />
-              Key Features
+              Key Advantages
             </h3>
             <div className="grid grid-cols-1 gap-4">
               <div className="bg-purple-500/10 rounded-xl p-4 border border-purple-500/20">
@@ -228,22 +255,30 @@ function BentoGrid() {
                   <BiShield className="text-blue-400 text-xl" />
                   <span className="font-semibold text-white text-sm">Zero-Knowledge Proofs</span>
                 </div>
-                <p className="text-gray-400 text-xs">Verify identity without revealing data</p>
+                <p className="text-gray-400 text-xs">Yes/No responses without revealing underlying data</p>
               </div>
               <div className="bg-purple-500/10 rounded-xl p-4 border border-purple-500/20">
                 <div className="flex items-center gap-3 mb-2">
                   <FaUserShield className="text-green-400 text-xl" />
-                  <span className="font-semibold text-white text-sm">Biometric Security</span>
+                  <span className="font-semibold text-white text-sm">Post-Quantum Security</span>
                 </div>
-                <p className="text-gray-400 text-xs">Your unique identity as your key</p>
+                <p className="text-gray-400 text-xs">Protection against future quantum computing attacks</p>
               </div>
               <div className="bg-purple-500/10 rounded-xl p-4 border border-purple-500/20">
                 <div className="flex items-center gap-3 mb-2">
                   <HiLightningBolt className="text-yellow-400 text-xl" />
-                  <span className="font-semibold text-white text-sm">Instant Access</span>
+                  <span className="font-semibold text-white text-sm">Centralized Convenience</span>
                 </div>
-                <p className="text-gray-400 text-xs">Sub-second authentication</p>
+                <p className="text-gray-400 text-xs">Reduced form-filling across multiple websites</p>
               </div>
+            </div>
+            
+            <div className="mt-4 p-3 bg-gradient-to-r from-purple-600/20 to-pink-600/20 rounded-xl border border-purple-500/30">
+              <h4 className="text-sm font-semibold text-white mb-2">Competitive Edge</h4>
+              <p className="text-gray-300 text-xs leading-relaxed">
+                Unlike Sedicii and Keyless, we combine ZKP privacy with post-quantum cryptography and 
+                centralized convenience - stronger security and better UX than single-focus approaches.
+              </p>
             </div>
           </div>
 
@@ -255,9 +290,10 @@ function BentoGrid() {
                 <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
                   1
                 </div>
-                <h4 className="text-lg font-semibold text-white mb-3">Biometric Enrollment</h4>
+                <h4 className="text-lg font-semibold text-white mb-3">Credential Issuance</h4>
                 <p className="text-gray-400 text-sm leading-relaxed">
-                  Securely register your biometric data using advanced cryptographic techniques that never store your actual biometrics.
+                  Receive credentials from trusted issuers into a secure wallet on your device. Install a browser extension 
+                  linked to this wallet for seamless authentication across websites.
                 </p>
               </div>
               
@@ -265,9 +301,10 @@ function BentoGrid() {
                 <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
                   2
                 </div>
-                <h4 className="text-lg font-semibold text-white mb-3">Zero-Knowledge Verification</h4>
+                <h4 className="text-lg font-semibold text-white mb-3">Zero-Knowledge Authentication</h4>
                 <p className="text-gray-400 text-sm leading-relaxed">
-                  Authenticate using ZK-proofs that verify your identity without revealing any personal information to anyone.
+                  When authentication is requested, you receive yes/no prompts in your wallet. After 2FA verification 
+                  (passkey/biometric), websites get only the yes/no they need - no personal data exposed.
                 </p>
               </div>
               
@@ -275,10 +312,34 @@ function BentoGrid() {
                 <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
                   3
                 </div>
-                <h4 className="text-lg font-semibold text-white mb-3">Instant Access</h4>
+                <h4 className="text-lg font-semibold text-white mb-3">Quantum-Safe Security</h4>
                 <p className="text-gray-400 text-sm leading-relaxed">
-                  Get immediate access to any Web3 application with one simple biometric verification - no keys, no passwords.
+                  Your credentials stay in your wallet. Our servers store only minimal metadata with post-quantum 
+                  cryptography protection, ensuring security against future quantum computing threats.
                 </p>
+              </div>
+            </div>
+            
+            {/* Additional Details */}
+            <div className="mt-8 grid md:grid-cols-2 gap-6">
+              <div className="bg-cyan-500/10 rounded-2xl p-6 border border-cyan-500/20">
+                <h4 className="text-lg font-semibold text-white mb-3">Customer Experience</h4>
+                <ul className="text-gray-400 text-sm space-y-2">
+                  <li>• Browser extension for automatic authentication</li>
+                  <li>• Simple yes/no prompts instead of form filling</li>
+                  <li>• 2FA protection with passkey/biometric</li>
+                  <li>• Complete privacy with zero data sharing</li>
+                </ul>
+              </div>
+              
+              <div className="bg-blue-500/10 rounded-2xl p-6 border border-blue-500/20">
+                <h4 className="text-lg font-semibold text-white mb-3">Security Framework</h4>
+                <ul className="text-gray-400 text-sm space-y-2">
+                  <li>• Post-quantum cryptography by default</li>
+                  <li>• Quantum Key Distribution for high-assurance links</li>
+                  <li>• API-driven backend with audit logging</li>
+                  <li>• OAuth/OIDC and WebAuthn integration</li>
+                </ul>
               </div>
             </div>
           </div>
