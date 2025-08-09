@@ -48,7 +48,7 @@ function NavBar() {
         </div>
       </div>
       <button className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-2 rounded-lg font-semibold hover:from-purple-600 hover:to-pink-600 transition-all duration-200">
-        Book Demo
+        Book Tech Demo
       </button>
     </nav>
   );
@@ -61,24 +61,24 @@ function Hero() {
       {/* Main content */}
       <div className="relative z-10 max-w-2xl">
         <h1 className="text-5xl md:text-6xl font-bold text-white mb-4">
-          Your AI-Powered{" "}
+          Your Web3{" "}
           <span className="text-transparent bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text">
-            Design
+            Privacy
           </span>{" "}
-          Assistant
+          Solution
         </h1>
         <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-          Unlock your creative potential. Seamlessly generate, customize, and
-          perfect your designs with cutting-edge AI technology.
+          Unlock true digital privacy with AirLOQC's keyless zero-knowledge proof technology. 
+          Secure, private, and decentralized authentication for the Web3 era.
         </p>
 
         {/* CTA Buttons */}
         <div className="flex flex-row gap-4 justify-start items-center">
           <button className="bg-gradient-to-r from-purple-500 via-purple-400 to-purple-500 text-white px-8 py-3 rounded-lg font-semibold hover:from-purple-600 hover:to-pink-600 transition-all duration-200 shadow-lg">
-            Get Started
+            Start Building
           </button>
           <button className="text-gray-300 px-8 py-3 rounded-lg font-semibold hover:border-gray-400 hover:text-white transition-all duration-200">
-            View Examples
+            Read Docs
           </button>
         </div>
       </div>
@@ -97,8 +97,16 @@ function TrustedBySection() {
       name: "Solidity",
     },
     {
+      icon: <FaEthereum />,
+      name: "Polygon",
+    },
+    {
       icon: <SiSolidity />,
-      name: "Solidity",
+      name: "zkSync",
+    },
+    {
+      icon: <FaEthereum />,
+      name: "Arbitrum",
     },
   ];
 
@@ -124,20 +132,20 @@ function FeaturesSection() {
   const features = [
     {
       icon: <GoUpload />,
-      title: "Upload Brief",
+      title: "Keyless Authentication",
       description:
-        "Share your project details and set our AI agents your vision.",
+        "Eliminate private key management with our innovative keyless zero-knowledge proof system.",
     },
     {
       icon: <BsStars />,
-      title: "Generate Designs",
+      title: "Zero-Knowledge Proofs",
       description:
-        "Watch as our AI crafts custom design ideas tailored to you.",
+        "Verify identity and transactions without revealing sensitive information or compromising privacy.",
     },
     {
       icon: <IoIosColorPalette />,
-      title: "Refine Creation",
-      description: "Perfect your chosen concepts with easy-to-use AI tools.",
+      title: "Decentralized Security",
+      description: "Built on blockchain technology for maximum security, transparency, and trust.",
     },
   ];
 
@@ -145,15 +153,14 @@ function FeaturesSection() {
     <div className="py-12 sm:py-20">
       <div className=" mb-16">
         <h2 className="text-4xl md:text-5xl font-bold mb-6">
-          Unleash Your{" "}
+          Revolutionize{" "}
           <span className="text-transparent bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text">
-            Creativity
+            Web3 Privacy
           </span>
         </h2>
         <p className="text-gray-400 text-lg max-w-2xl">
-          Our AI-powered design studio helps you turn ideas into stunning
-          designs effortlessly. Follow these simple steps to turn your vision
-          into reality.
+          AirLOQC's cutting-edge keyless zero-knowledge proof technology provides 
+          unparalleled security and privacy for decentralized applications and blockchain interactions.
         </p>
       </div>
 
@@ -181,7 +188,7 @@ function TeamSection() {
     {
       name: "Alex Johnson",
       role: "CEO & Founder",
-      bio: "Former Google AI researcher with 10+ years of experience in machine learning and product design.",
+      bio: "Former Ethereum Foundation researcher with 10+ years of experience in cryptography and blockchain technology.",
       image: "/team/alex.jpg",
       linkedin: "#",
       twitter: "#"
@@ -189,23 +196,23 @@ function TeamSection() {
     {
       name: "Sarah Chen",
       role: "CTO",
-      bio: "Ex-Adobe engineer specializing in creative AI tools and scalable design systems.",
+      bio: "Ex-Consensys engineer specializing in zero-knowledge proofs and privacy-preserving protocols.",
       image: "/team/sarah.jpg", 
       linkedin: "#",
       twitter: "#"
     },
     {
       name: "Marcus Williams",
-      role: "Head of Design",
-      bio: "Award-winning designer with expertise in UX/UI and AI-assisted creative workflows.",
+      role: "Head of Cryptography",
+      bio: "PhD in Applied Cryptography, leading research in keyless authentication and ZK-SNARK implementations.",
       image: "/team/marcus.jpg",
       linkedin: "#",
       twitter: "#"
     },
     {
       name: "Dr. Emily Rodriguez",
-      role: "AI Research Lead",
-      bio: "PhD in Computer Vision from MIT, leading our breakthrough AI design generation algorithms.",
+      role: "Blockchain Research Lead",
+      bio: "PhD in Computer Science from MIT, pioneering next-generation privacy solutions for Web3.",
       image: "/team/emily.jpg",
       linkedin: "#", 
       twitter: "#"
@@ -222,8 +229,8 @@ function TeamSection() {
           </span>
         </h2>
         <p className="text-gray-400 text-lg max-w-3xl ">
-          We're a passionate group of designers, engineers, and AI researchers dedicated to 
-          revolutionizing the creative process through cutting-edge technology.
+          We're a passionate group of cryptographers, blockchain engineers, and privacy researchers dedicated to 
+          building the future of secure, keyless Web3 authentication.
         </p>
       </div>
 
@@ -268,7 +275,7 @@ function TeamSection() {
         <div className="bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-2xl p-8 border border-purple-500/30">
           <h3 className="text-2xl font-bold text-white mb-4">Want to Join Our Team?</h3>
           <p className="text-gray-300 mb-6">
-            We're always looking for talented individuals who share our passion for AI and design.
+            We're always looking for talented individuals who share our passion for Web3 privacy and blockchain innovation.
           </p>
           <button className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-3 rounded-lg font-semibold hover:from-purple-600 hover:to-pink-600 transition-all duration-200 shadow-lg">
             View Open Positions
@@ -282,36 +289,36 @@ function TeamSection() {
 function FAQSection(){
   const faqs = [
     {
-      question: "How does AirLogC's AI design process work?",
-      answer: "Our AI analyzes your brief, understands your requirements, and generates multiple design concepts using advanced machine learning algorithms. You can then refine and customize these designs using our intuitive tools."
+      question: "What is keyless zero-knowledge proof authentication?",
+      answer: "Our keyless ZK-proof system allows users to authenticate and interact with blockchain applications without managing private keys, while maintaining complete privacy through cryptographic proofs that verify identity without revealing sensitive information."
     },
     {
-      question: "What types of designs can AirLogC create?",
-      answer: "AirLogC can create a wide range of designs including logos, web layouts, marketing materials, social media graphics, presentations, and more. Our AI is trained on diverse design styles and industries."
+      question: "How does AirLOQC eliminate the need for private keys?",
+      answer: "AirLOQC uses advanced cryptographic techniques including biometric authentication, secure multi-party computation, and zero-knowledge proofs to create a seamless authentication experience without traditional private key management."
     },
     {
-      question: "Do I retain full ownership of the designs created?",
-      answer: "Yes, absolutely! All designs created using AirLogC belong entirely to you. We don't claim any rights to your creations, and you're free to use them commercially without any restrictions."
+      question: "Which blockchains does AirLOQC support?",
+      answer: "AirLOQC is compatible with Ethereum, Polygon, Arbitrum, zkSync, and other EVM-compatible chains. We're continuously expanding support for additional blockchain networks."
     },
     {
-      question: "Can I collaborate with my team on designs?",
-      answer: "Yes! AirLogC offers robust collaboration features. You can invite team members, share designs, get feedback, and work together in real-time on your creative projects."
+      question: "Is my data truly private with zero-knowledge proofs?",
+      answer: "Yes! Zero-knowledge proofs mathematically guarantee that your personal information remains private. We can verify your credentials or transactions without ever seeing or storing your actual data."
     },
     {
-      question: "How accurate is the AI in understanding my design requirements?",
-      answer: "Our AI has been trained on millions of design examples and achieves high accuracy in interpreting design briefs. The more detailed your brief, the better the results. You can always refine and adjust the output."
+      question: "How secure is keyless authentication compared to traditional wallets?",
+      answer: "Keyless authentication eliminates single points of failure associated with private key management. Our distributed approach using biometrics and cryptographic proofs provides superior security while being more user-friendly."
     },
     {
-      question: "What file formats can I export my designs in?",
-      answer: "You can export your designs in multiple formats including PNG, JPG, PDF, SVG, and AI files. We support both web-optimized and print-ready formats to suit your needs."
+      question: "Can developers integrate AirLOQC into existing dApps?",
+      answer: "Absolutely! We provide comprehensive SDKs, APIs, and documentation for seamless integration. Our authentication system can be implemented in any Web3 application with minimal code changes."
     },
     {
-      question: "Is there a free trial available?",
-      answer: "Yes! We offer a 14-day free trial with full access to all features. No credit card required to start. You can create up to 50 designs during your trial period."
+      question: "What happens if I lose access to my biometric data?",
+      answer: "Our system includes multiple recovery mechanisms including social recovery, backup authentication methods, and secure key recovery protocols to ensure you never lose access to your digital assets."
     },
     {
-      question: "How does pricing work?",
-      answer: "We offer flexible pricing plans based on your usage needs. Plans start from $14.99/month for individuals, with team and enterprise options available. All plans include unlimited revisions."
+      question: "Is there a cost to use AirLOQC's authentication system?",
+      answer: "We offer a free tier for individual users and developers getting started. Enterprise solutions and high-volume usage have custom pricing. Gas fees for blockchain transactions apply as normal."
     }
   ];
 
@@ -325,8 +332,8 @@ function FAQSection(){
           </span>
         </h2>
         <p className="text-gray-400 text-lg max-w-3xl mx-auto">
-          Got questions about AirLogC? We've got answers! Here are the most common questions 
-          from our users about our AI-powered design platform.
+          Got questions about AirLOQC's keyless zero-knowledge proof technology? Here are the most common questions 
+          from developers and users about our Web3 privacy solution.
         </p>
       </div>
 
@@ -362,14 +369,14 @@ function FAQSection(){
         <div className="bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-2xl p-8 border border-purple-500/30">
           <h3 className="text-2xl font-bold text-white mb-4">Still Have Questions?</h3>
           <p className="text-gray-300 mb-6 max-w-xl mx-auto">
-            Can't find the answer you're looking for? Our support team is here to help you get started.
+            Can't find the answer you're looking for? Our technical team is here to help you understand and implement our Web3 privacy solutions.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-3 rounded-lg font-semibold hover:from-purple-600 hover:to-pink-600 transition-all duration-200 shadow-lg">
-              Contact Support
+              Contact Technical Support
             </button>
             <button className="text-purple-400 px-8 py-3 rounded-lg font-semibold border border-purple-500 hover:bg-purple-500 hover:text-white transition-all duration-200">
-              Schedule Demo
+              Schedule Tech Demo
             </button>
           </div>
         </div>
@@ -432,8 +439,8 @@ function FAQSection(){
           </span>
         </h2>
         <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-          Follow us on social media for the latest updates, design inspiration, 
-          and behind-the-scenes content from the AirLogC team.
+          Follow us on social media for the latest updates on Web3 privacy technology, 
+          zero-knowledge proof innovations, and blockchain security developments from the AirLOQC team.
         </p>
       </div>
 
@@ -461,7 +468,7 @@ function FAQSection(){
       <div className="bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-2xl p-8 border border-purple-500/30 text-center">
         <h3 className="text-2xl font-bold text-white mb-4">Stay in the Loop</h3>
         <p className="text-gray-300 mb-6 max-w-xl mx-auto">
-          Get the latest news, design tips, and exclusive insights delivered straight to your inbox.
+          Get the latest news on Web3 privacy, zero-knowledge proof updates, and exclusive technical insights delivered straight to your inbox.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
           <input
