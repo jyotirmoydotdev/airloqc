@@ -13,8 +13,6 @@ export default function Home() {
       <NavBar />
       <HeroSection />
       <BentoGrid />
-      <TeamSection />
-      <FAQSection />
       <SocialLinksSection />
     </div>
   );
@@ -247,8 +245,76 @@ function BentoGrid() {
             </div>
           </div>
 
+          {/* Team Preview */}
+          <div className="bg-gradient-to-br from-gray-500/10 to-slate-500/10 border border-gray-500/20 rounded-3xl p-6">
+            <h3 className="text-xl font-bold text-white mb-4">Expert Team</h3>
+            <div className="space-y-3">
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full flex items-center justify-center">
+                  <span className="text-white text-xs font-bold">AJ</span>
+                </div>
+                <div>
+                  <div className="text-white text-sm font-semibold">Alex Johnson</div>
+                  <div className="text-gray-400 text-xs">CEO & Cryptography Expert</div>
+                </div>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full flex items-center justify-center">
+                  <span className="text-white text-xs font-bold">SC</span>
+                </div>
+                <div>
+                  <div className="text-white text-sm font-semibold">Sarah Chen</div>
+                  <div className="text-gray-400 text-xs">CTO & ZK-Proof Specialist</div>
+                </div>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full flex items-center justify-center">
+                  <span className="text-white text-xs font-bold">MW</span>
+                </div>
+                <div>
+                  <div className="text-white text-sm font-semibold">Marcus Williams</div>
+                  <div className="text-gray-400 text-xs">Head of Security</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* FAQ Preview */}
+          <div className="bg-gradient-to-br from-indigo-500/10 to-purple-500/10 border border-indigo-500/20 rounded-3xl p-6">
+            <h3 className="text-xl font-bold text-white mb-4">Quick FAQ</h3>
+            <div className="space-y-4">
+              <details className="group">
+                <summary className="text-sm font-semibold text-white cursor-pointer list-none flex items-center justify-between">
+                  How secure is keyless auth?
+                  <span className="text-indigo-400 group-open:rotate-45 transition-transform">+</span>
+                </summary>
+                <p className="text-gray-400 text-xs mt-2 leading-relaxed">
+                  More secure than traditional keys as it eliminates single points of failure.
+                </p>
+              </details>
+              <details className="group">
+                <summary className="text-sm font-semibold text-white cursor-pointer list-none flex items-center justify-between">
+                  Which blockchains supported?
+                  <span className="text-indigo-400 group-open:rotate-45 transition-transform">+</span>
+                </summary>
+                <p className="text-gray-400 text-xs mt-2 leading-relaxed">
+                  Ethereum, Polygon, Arbitrum, zkSync, and all EVM-compatible chains.
+                </p>
+              </details>
+              <details className="group">
+                <summary className="text-sm font-semibold text-white cursor-pointer list-none flex items-center justify-between">
+                  Easy to integrate?
+                  <span className="text-indigo-400 group-open:rotate-45 transition-transform">+</span>
+                </summary>
+                <p className="text-gray-400 text-xs mt-2 leading-relaxed">
+                  Simple SDK integration with just a few lines of code.
+                </p>
+              </details>
+            </div>
+          </div>
+
           {/* How It Works */}
-          <div className="lg:col-span-3 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 border border-cyan-500/20 rounded-3xl p-8">
+          <div className="md:col-span-2 lg:col-span-3 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 border border-cyan-500/20 rounded-3xl p-8">
             <h3 className="text-2xl font-bold text-white mb-6 text-center">How AirLOQC Works</h3>
             <div className="grid md:grid-cols-3 gap-6">
               <div className="text-center">
@@ -301,212 +367,6 @@ function BentoGrid() {
               </button>
               <button className="text-purple-400 px-8 py-4 rounded-xl font-semibold border border-purple-500 hover:bg-purple-500 hover:text-white transition-all duration-200">
                 Try Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function TeamSection() {
-  const teamMembers = [
-    {
-      name: "Alex Johnson",
-      role: "CEO & Founder",
-      bio: "Former Ethereum Foundation researcher with 10+ years of experience in cryptography and blockchain technology.",
-      image: "/team/alex.jpg",
-      linkedin: "#",
-      twitter: "#"
-    },
-    {
-      name: "Sarah Chen",
-      role: "CTO",
-      bio: "Ex-Consensys engineer specializing in zero-knowledge proofs and privacy-preserving protocols.",
-      image: "/team/sarah.jpg", 
-      linkedin: "#",
-      twitter: "#"
-    },
-    {
-      name: "Marcus Williams",
-      role: "Head of Cryptography",
-      bio: "PhD in Applied Cryptography, leading research in keyless authentication and ZK-SNARK implementations.",
-      image: "/team/marcus.jpg",
-      linkedin: "#",
-      twitter: "#"
-    },
-    {
-      name: "Dr. Emily Rodriguez",
-      role: "Blockchain Research Lead",
-      bio: "PhD in Computer Science from MIT, pioneering next-generation privacy solutions for Web3.",
-      image: "/team/emily.jpg",
-      linkedin: "#", 
-      twitter: "#"
-    }
-  ];
-
-  return (
-    <div className="py-20 px-6">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Meet Our{" "}
-            <span className="text-transparent bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text">
-              Team
-            </span>
-          </h2>
-          <p className="text-gray-400 text-lg max-w-3xl mx-auto">
-            We're a passionate group of cryptographers, blockchain engineers, and privacy researchers dedicated to 
-            building the future of secure, keyless Web3 authentication.
-          </p>
-        </div>
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {teamMembers.map((member, index) => (
-            <div key={index} className="bg-gradient-to-br from-gray-500/10 to-slate-500/10 border border-gray-500/20 rounded-3xl p-6 text-center group hover:bg-gray-500/20 transition-all duration-300">
-              {/* Profile Image */}
-              <div className="relative w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden bg-gradient-to-r from-purple-400 to-pink-400 p-1">
-                <div className="w-full h-full rounded-full bg-gray-600 flex items-center justify-center">
-                  <span className="text-2xl font-bold text-white">
-                    {member.name.split(' ').map(n => n[0]).join('')}
-                  </span>
-                </div>
-              </div>
-              
-              {/* Member Info */}
-              <h3 className="text-xl font-bold text-white mb-2">{member.name}</h3>
-              <p className="text-purple-400 font-semibold mb-3">{member.role}</p>
-              <p className="text-gray-400 text-sm leading-relaxed mb-4">{member.bio}</p>
-              
-              {/* Social Links */}
-              <div className="flex justify-center gap-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <a 
-                  href={member.linkedin} 
-                  className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors"
-                >
-                  <BsLinkedin className="text-white text-sm" />
-                </a>
-                <a 
-                  href={member.twitter}
-                  className="w-8 h-8 bg-blue-400 rounded-full flex items-center justify-center hover:bg-blue-500 transition-colors"
-                >
-                  <BsTwitter className="text-white text-sm" />
-                </a>
-              </div>
-            </div>
-          ))}
-        </div>
-        
-        {/* Join Team CTA */}
-        <div className="text-center mt-16">
-          <div className="bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-3xl p-8 border border-purple-500/30">
-            <h3 className="text-2xl font-bold text-white mb-4">Want to Join Our Team?</h3>
-            <p className="text-gray-300 mb-6">
-              We're always looking for talented individuals who share our passion for Web3 privacy and blockchain innovation.
-            </p>
-            <button className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-3 rounded-xl font-semibold hover:from-purple-600 hover:to-pink-600 transition-all duration-200 shadow-lg">
-              View Open Positions
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function FAQSection() {
-  const faqs = [
-    {
-      question: "What is keyless zero-knowledge proof authentication?",
-      answer: "Our keyless ZK-proof system allows users to authenticate and interact with blockchain applications without managing private keys, while maintaining complete privacy through cryptographic proofs that verify identity without revealing sensitive information."
-    },
-    {
-      question: "How does AirLOQC eliminate the need for private keys?",
-      answer: "AirLOQC uses advanced cryptographic techniques including biometric authentication, secure multi-party computation, and zero-knowledge proofs to create a seamless authentication experience without traditional private key management."
-    },
-    {
-      question: "Which blockchains does AirLOQC support?",
-      answer: "AirLOQC is compatible with Ethereum, Polygon, Arbitrum, zkSync, and other EVM-compatible chains. We're continuously expanding support for additional blockchain networks."
-    },
-    {
-      question: "Is my data truly private with zero-knowledge proofs?",
-      answer: "Yes! Zero-knowledge proofs mathematically guarantee that your personal information remains private. We can verify your credentials or transactions without ever seeing or storing your actual data."
-    },
-    {
-      question: "How secure is keyless authentication compared to traditional wallets?",
-      answer: "Keyless authentication eliminates single points of failure associated with private key management. Our distributed approach using biometrics and cryptographic proofs provides superior security while being more user-friendly."
-    },
-    {
-      question: "Can developers integrate AirLOQC into existing dApps?",
-      answer: "Absolutely! We provide comprehensive SDKs, APIs, and documentation for seamless integration. Our authentication system can be implemented in any Web3 application with minimal code changes."
-    },
-    {
-      question: "What happens if I lose access to my biometric data?",
-      answer: "Our system includes multiple recovery mechanisms including social recovery, backup authentication methods, and secure key recovery protocols to ensure you never lose access to your digital assets."
-    },
-    {
-      question: "Is there a cost to use AirLOQC's authentication system?",
-      answer: "We offer a free tier for individual users and developers getting started. Enterprise solutions and high-volume usage have custom pricing. Gas fees for blockchain transactions apply as normal."
-    }
-  ];
-
-  return (
-    <div className="py-20 px-6">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Frequently Asked{" "}
-            <span className="text-transparent bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text">
-              Questions
-            </span>
-          </h2>
-          <p className="text-gray-400 text-lg max-w-3xl mx-auto">
-            Got questions about AirLOQC's keyless zero-knowledge proof technology? Here are the most common questions 
-            from developers and users about our Web3 privacy solution.
-          </p>
-        </div>
-
-        <div className="max-w-4xl mx-auto">
-          <div className="space-y-4">
-            {faqs.map((faq, index) => (
-              <details 
-                key={index} 
-                className="group bg-gradient-to-br from-gray-500/10 to-slate-500/10 border border-gray-500/20 rounded-3xl p-6 hover:bg-gray-500/20 transition-all duration-300"
-              >
-                <summary className="flex justify-between items-center cursor-pointer list-none">
-                  <h3 className="text-lg font-semibold text-white group-hover:text-purple-400 transition-colors">
-                    {faq.question}
-                  </h3>
-                  <div className="ml-4 flex-shrink-0">
-                    <div className="w-6 h-6 rounded-full bg-purple-500 flex items-center justify-center group-open:rotate-45 transition-transform duration-200">
-                      <span className="text-white text-sm font-bold">+</span>
-                    </div>
-                  </div>
-                </summary>
-                <div className="mt-4 pt-4 border-t border-gray-700">
-                  <p className="text-gray-300 leading-relaxed">
-                    {faq.answer}
-                  </p>
-                </div>
-              </details>
-            ))}
-          </div>
-        </div>
-
-        {/* Contact CTA */}
-        <div className="text-center mt-16">
-          <div className="bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-3xl p-8 border border-purple-500/30">
-            <h3 className="text-2xl font-bold text-white mb-4">Still Have Questions?</h3>
-            <p className="text-gray-300 mb-6 max-w-xl mx-auto">
-              Can't find the answer you're looking for? Our technical team is here to help you understand and implement our Web3 privacy solutions.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-3 rounded-xl font-semibold hover:from-purple-600 hover:to-pink-600 transition-all duration-200 shadow-lg">
-                Contact Technical Support
-              </button>
-              <button className="text-purple-400 px-8 py-3 rounded-xl font-semibold border border-purple-500 hover:bg-purple-500 hover:text-white transition-all duration-200">
-                Schedule Tech Demo
               </button>
             </div>
           </div>
