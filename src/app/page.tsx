@@ -28,7 +28,7 @@ function NavBar() {
           <div className="text-2xl font-bold text-white">
             Air<span className="text-transparent bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text">LOQC</span>
           </div>
-          
+
           <div className="hidden md:flex items-center gap-8">
             <a href="#solution" className="text-gray-300 hover:text-white transition-colors cursor-pointer">
               Solution
@@ -43,7 +43,7 @@ function NavBar() {
               Docs
             </a>
           </div>
-          
+
           <div className="flex items-center gap-4">
             <button className="hidden sm:block text-gray-300 hover:text-white transition-colors">
               Sign In
@@ -67,14 +67,14 @@ function HeroSection() {
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
           <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-pink-500/10 rounded-full blur-3xl"></div>
         </div>
-        
+
         <div className="relative z-10 text-center">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-purple-500/20 to-pink-500/20 border border-purple-500/30 mb-8">
             <HiSparkles className="text-purple-400" />
             <span className="text-sm text-gray-300">Keyless Zero-Knowledge Authentication</span>
           </div>
-          
+
           {/* Main heading */}
           <h1 className="text-6xl md:text-8xl font-bold mb-6 leading-tight">
             <span className="text-white">Secure</span>{" "}
@@ -87,13 +87,13 @@ function HeroSection() {
               Keys
             </span>
           </h1>
-          
+
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-gray-400 mb-12 max-w-3xl mx-auto leading-relaxed">
-            Revolutionary keyless zero-knowledge proof technology that eliminates private keys 
+            Revolutionary keyless zero-knowledge proof technology that eliminates private keys
             while providing unmatched security and privacy for Web3 applications.
           </p>
-          
+
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
             <button className="group bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-4 rounded-full font-semibold hover:from-purple-600 hover:to-pink-600 transition-all duration-200 shadow-xl flex items-center gap-2">
@@ -105,7 +105,7 @@ function HeroSection() {
               Live Demo
             </button>
           </div>
-          
+
           {/* Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
             <div className="text-center">
@@ -136,7 +136,7 @@ function BentoGrid() {
     <div className="py-20 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          
+
           {/* Problem Statement - Large Card */}
           <div className="lg:col-span-2 lg:row-span-2 bg-gradient-to-br from-red-500/10 to-orange-500/10 border border-red-500/20 rounded-3xl p-8">
             <div className="flex items-start gap-4 mb-6">
@@ -148,12 +148,12 @@ function BentoGrid() {
                 <p className="text-red-300">Critical issues plaguing modern authentication systems</p>
               </div>
             </div>
-            
+
             <div className="space-y-6">
               <div className="bg-red-500/10 rounded-2xl p-6 border border-red-500/20">
                 <h4 className="text-lg font-semibold text-white mb-3">Current Situation</h4>
                 <p className="text-gray-300 text-sm leading-relaxed mb-4">
-                  Authentication flows demand IDs, photos, biometrics, and account numbers when verifiers often only need a yes or no. 
+                  Authentication flows demand IDs, photos, biometrics, and account numbers when verifiers often only need a yes or no.
                   This leaves users exposed and makes compliance a headache for businesses.
                 </p>
                 <div className="flex items-center gap-2 text-red-400 text-sm">
@@ -165,7 +165,7 @@ function BentoGrid() {
               <div className="bg-red-500/10 rounded-2xl p-6 border border-red-500/20">
                 <h4 className="text-lg font-semibold text-white mb-3">Security Threats</h4>
                 <p className="text-gray-300 text-sm leading-relaxed mb-4">
-                  National Identity Cards like Social Security and Aadhaar misuse stories and large data leaks show how 
+                  National Identity Cards like Social Security and Aadhaar misuse stories and large data leaks show how
                   centralized data centers are often targeted and thus are not the way moving forward.
                 </p>
                 <div className="flex items-center gap-2 text-red-400 text-sm">
@@ -177,7 +177,7 @@ function BentoGrid() {
               <div className="bg-red-500/10 rounded-2xl p-6 border border-red-500/20">
                 <h4 className="text-lg font-semibold text-white mb-3">The Hassle</h4>
                 <p className="text-gray-300 text-sm leading-relaxed mb-4">
-                  Password resets, OTP loops, and KYC re-runs are slow and expensive. The industry is moving to passwordless 
+                  Password resets, OTP loops, and KYC re-runs are slow and expensive. The industry is moving to passwordless
                   but most passkey flows still reveal more than is strictly necessary.
                 </p>
                 <div className="flex items-center gap-2 text-red-400 text-sm">
@@ -189,7 +189,7 @@ function BentoGrid() {
               <div className="bg-red-500/10 rounded-2xl p-6 border border-red-500/20">
                 <h4 className="text-lg font-semibold text-white mb-3">Future Threats</h4>
                 <p className="text-gray-300 text-sm leading-relaxed mb-4">
-                  Ongoing research in Quantum Cryptanalysis poses threats to data banks and can cause massive data breaches. 
+                  Ongoing research in Quantum Cryptanalysis poses threats to data banks and can cause massive data breaches.
                   Current encryption methods will become vulnerable to quantum computing attacks.
                 </p>
                 <div className="flex items-center gap-2 text-red-400 text-sm">
@@ -208,25 +208,25 @@ function BentoGrid() {
               </div>
               <h3 className="text-xl font-bold text-white">Our Solution</h3>
             </div>
-            
+
             <div className="space-y-4">
               <div className="bg-green-500/10 rounded-xl p-4 border border-green-500/20">
                 <h4 className="text-sm font-semibold text-white mb-2">Zero Knowledge Proof</h4>
                 <p className="text-gray-300 text-xs leading-relaxed">
-                  Ensures enterprises receive only yes/no answers without underlying data. For age verification, 
+                  Ensures enterprises receive only yes/no answers without underlying data. For age verification,
                   response is simply "Yes" or "No" without revealing exact DOB.
                 </p>
               </div>
-              
+
               <div className="bg-blue-500/10 rounded-xl p-4 border border-blue-500/20">
                 <h4 className="text-sm font-semibold text-white mb-2">Post Quantum Cryptography</h4>
                 <p className="text-gray-300 text-xs leading-relaxed">
-                  Protected centralized database using PQC for key management and secure communications, 
+                  Protected centralized database using PQC for key management and secure communications,
                   alongside strong encryption at rest.
                 </p>
               </div>
             </div>
-            
+
             <div className="space-y-2 mt-4">
               <div className="flex items-center gap-2 text-green-400 text-xs">
                 <BsCheck2Circle />
@@ -272,11 +272,11 @@ function BentoGrid() {
                 <p className="text-gray-400 text-xs">Reduced form-filling across multiple websites</p>
               </div>
             </div>
-            
+
             <div className="mt-4 p-3 bg-gradient-to-r from-purple-600/20 to-pink-600/20 rounded-xl border border-purple-500/30">
               <h4 className="text-sm font-semibold text-white mb-2">Competitive Edge</h4>
               <p className="text-gray-300 text-xs leading-relaxed">
-                Unlike Sedicii and Keyless, we combine ZKP privacy with post-quantum cryptography and 
+                Unlike Sedicii and Keyless, we combine ZKP privacy with post-quantum cryptography and
                 centralized convenience - stronger security and better UX than single-focus approaches.
               </p>
             </div>
@@ -292,34 +292,34 @@ function BentoGrid() {
                 </div>
                 <h4 className="text-lg font-semibold text-white mb-3">Credential Issuance</h4>
                 <p className="text-gray-400 text-sm leading-relaxed">
-                  Receive credentials from trusted issuers into a secure wallet on your device. Install a browser extension 
+                  Receive credentials from trusted issuers into a secure wallet on your device. Install a browser extension
                   linked to this wallet for seamless authentication across websites.
                 </p>
               </div>
-              
+
               <div className="text-center">
                 <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
                   2
                 </div>
                 <h4 className="text-lg font-semibold text-white mb-3">Zero-Knowledge Authentication</h4>
                 <p className="text-gray-400 text-sm leading-relaxed">
-                  When authentication is requested, you receive yes/no prompts in your wallet. After 2FA verification 
+                  When authentication is requested, you receive yes/no prompts in your wallet. After 2FA verification
                   (passkey/biometric), websites get only the yes/no they need - no personal data exposed.
                 </p>
               </div>
-              
+
               <div className="text-center">
                 <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
                   3
                 </div>
                 <h4 className="text-lg font-semibold text-white mb-3">Quantum-Safe Security</h4>
                 <p className="text-gray-400 text-sm leading-relaxed">
-                  Your credentials stay in your wallet. Our servers store only minimal metadata with post-quantum 
+                  Your credentials stay in your wallet. Our servers store only minimal metadata with post-quantum
                   cryptography protection, ensuring security against future quantum computing threats.
                 </p>
               </div>
             </div>
-            
+
             {/* Additional Details */}
             <div className="mt-8 grid md:grid-cols-2 gap-6">
               <div className="bg-cyan-500/10 rounded-2xl p-6 border border-cyan-500/20">
@@ -331,7 +331,7 @@ function BentoGrid() {
                   <li>• Complete privacy with zero data sharing</li>
                 </ul>
               </div>
-              
+
               <div className="bg-blue-500/10 rounded-2xl p-6 border border-blue-500/20">
                 <h4 className="text-lg font-semibold text-white mb-3">Security Framework</h4>
                 <ul className="text-gray-400 text-sm space-y-2">
@@ -345,7 +345,7 @@ function BentoGrid() {
           </div>
 
         </div>
-        
+
         {/* CTA Section */}
         <div className="text-center mt-16">
           <div className="bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-3xl p-8 border border-purple-500/30 max-w-4xl mx-auto">
@@ -353,7 +353,7 @@ function BentoGrid() {
               Ready to Revolutionize Web3 Authentication?
             </h3>
             <p className="text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed">
-              Join thousands of developers and users who have already embraced keyless, 
+              Join thousands of developers and users who have already embraced keyless,
               privacy-first authentication with AirLOQC's cutting-edge technology.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -374,36 +374,44 @@ function BentoGrid() {
 function TeamSection() {
   const teamMembers = [
     {
-      name: "Alex Johnson",
-      role: "CEO & Founder",
-      bio: "Former Ethereum Foundation researcher with 10+ years of experience in cryptography and blockchain technology.",
-      image: "/team/alex.jpg",
-      linkedin: "#",
-      twitter: "#"
+      name: "Amrit Nanda",
+      role: "CEO",
+      bio: "Aspiring leader, SIH-qualified, with a knack for decisive, creative, and composed leadership, consistently among the top performers.",
+      image: "",
+      linkedin: "https://www.linkedin.com/in/amrit-nanda-118564332/",
+      twitter: "Take a look at Amrit (@AmritSnanda): https://x.com/AmritSnanda?t=dQa8e7dsajgIsyBfZ6hgXg&s=08"
     },
     {
-      name: "Sarah Chen",
-      role: "CTO",
+      name: "Faizaan Nasir",
+      role: "CIO",
       bio: "Ex-Consensys engineer specializing in zero-knowledge proofs and privacy-preserving protocols.",
-      image: "/team/sarah.jpg", 
-      linkedin: "#",
-      twitter: "#"
+      image: "/team/sarah.jpg",
+      linkedin: "https://www.linkedin.com/in/faizaan-nasir-b88870220/",
+      twitter: ""
     },
     {
-      name: "Marcus Williams",
-      role: "Head of Cryptography",
+      name: "Aman Giri",
+      role: "CTO",
       bio: "PhD in Applied Cryptography, leading research in keyless authentication and ZK-SNARK implementations.",
       image: "/team/marcus.jpg",
-      linkedin: "#",
-      twitter: "#"
+      linkedin: "https://www.linkedin.com/in/amanxgiri/",
+      twitter: ""
     },
     {
-      name: "Dr. Emily Rodriguez",
-      role: "Blockchain Research Lead",
-      bio: "PhD in Computer Science from MIT, pioneering next-generation privacy solutions for Web3.",
+      name: "Chinmaye Sharma",
+      role: "COO",
+      bio: "Specializing in building scalable operations, optimizing workflows, and driving growth for zero-knowledge proof ventures.",
       image: "/team/emily.jpg",
-      linkedin: "#", 
-      twitter: "#"
+      linkedin: "https://www.linkedin.com/in/chinmaye-sharma-2b9879379/",
+      twitter: ""
+    },
+    {
+      name: "Sparsh Samaddar",
+      role: "CMO",
+      bio: "Background in digital marketing, community building, and developer ecosystem growth.",
+      image: "/team/emily.jpg",
+      linkedin: "https://www.linkedin.com/in/sparsh-samaddar-48a793309/",
+      twitter: ""
     }
   ];
 
@@ -418,12 +426,12 @@ function TeamSection() {
             </span>
           </h2>
           <p className="text-gray-400 text-lg max-w-3xl mx-auto">
-            We're a passionate group of cryptographers, blockchain engineers, and privacy researchers dedicated to 
+            We're a passionate group of cryptographers, blockchain engineers, and privacy researchers dedicated to
             building the future of secure, keyless Web3 authentication.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
           {teamMembers.map((member, index) => (
             <div key={index} className="bg-gradient-to-br from-gray-500/10 to-slate-500/10 border border-gray-500/20 rounded-3xl p-6 text-center group hover:bg-gray-500/20 transition-all duration-300">
               {/* Profile Image */}
@@ -434,31 +442,34 @@ function TeamSection() {
                   </span>
                 </div>
               </div>
-              
+
               {/* Member Info */}
               <h3 className="text-xl font-bold text-white mb-2">{member.name}</h3>
               <p className="text-purple-400 font-semibold mb-3">{member.role}</p>
               <p className="text-gray-400 text-sm leading-relaxed mb-4">{member.bio}</p>
-              
               {/* Social Links */}
               <div className="flex justify-center gap-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <a 
-                  href={member.linkedin} 
-                  className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors"
-                >
-                  <BsLinkedin className="text-white text-sm" />
-                </a>
-                <a 
-                  href={member.twitter}
-                  className="w-8 h-8 bg-blue-400 rounded-full flex items-center justify-center hover:bg-blue-500 transition-colors"
-                >
-                  <BsTwitter className="text-white text-sm" />
-                </a>
+                {member.linkedin ? <>
+                  <a
+                    href={member.linkedin}
+                    className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors"
+                  >
+                    <BsLinkedin className="text-white text-sm" />
+                  </a>
+                </> : null}
+                {member.twitter ? <>
+                  <a
+                    href={member.twitter}
+                    className="w-8 h-8 bg-blue-400 rounded-full flex items-center justify-center hover:bg-blue-500 transition-colors"
+                  >
+                    <BsTwitter className="text-white text-sm" />
+                  </a>
+                </> : null}
               </div>
             </div>
           ))}
         </div>
-        
+
         {/* Join Team CTA */}
         <div className="text-center mt-16">
           <div className="bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-3xl p-8 border border-purple-500/30">
@@ -523,7 +534,7 @@ function FAQSection() {
             </span>
           </h2>
           <p className="text-gray-400 text-lg max-w-3xl mx-auto">
-            Got questions about AirLOQC's keyless zero-knowledge proof technology? Here are the most common questions 
+            Got questions about AirLOQC's keyless zero-knowledge proof technology? Here are the most common questions
             from developers and users about our Web3 privacy solution.
           </p>
         </div>
@@ -531,8 +542,8 @@ function FAQSection() {
         <div className="max-w-4xl mx-auto">
           <div className="space-y-4">
             {faqs.map((faq, index) => (
-              <details 
-                key={index} 
+              <details
+                key={index}
                 className="group bg-gradient-to-br from-gray-500/10 to-slate-500/10 border border-gray-500/20 rounded-3xl p-6 hover:bg-gray-500/20 transition-all duration-300"
               >
                 <summary className="flex justify-between items-center cursor-pointer list-none">
@@ -634,7 +645,7 @@ function SocialLinksSection() {
             </span>
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            Follow us on social media for the latest updates on Web3 privacy technology, 
+            Follow us on social media for the latest updates on Web3 privacy technology,
             zero-knowledge proof innovations, and blockchain security developments.
           </p>
         </div>
