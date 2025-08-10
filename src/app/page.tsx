@@ -384,7 +384,7 @@ function TeamSection() {
     {
       name: "Faizaan Nasir",
       role: "CIO",
-      bio: "Ex-Consensys engineer specializing in zero-knowledge proofs and privacy-preserving protocols.",
+      bio: "Winner of the Interhouse Cryptography Hackathon with a strong academic record and experience in secure applications, data visualization, and cloud-based solutions.",
       image: "/team/sarah.jpg",
       linkedin: "https://www.linkedin.com/in/faizaan-nasir-b88870220/",
       twitter: ""
