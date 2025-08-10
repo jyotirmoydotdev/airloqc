@@ -5,7 +5,12 @@ import { FaEthereum, FaFacebookF, FaLock, FaUserShield } from "react-icons/fa";
 import { GoUpload, GoShield, GoZap } from "react-icons/go";
 import { IoIosColorPalette } from "react-icons/io";
 import { SiSolidity } from "react-icons/si";
-import { HiSparkles, HiLightningBolt } from "react-icons/hi";
+import { HiSparkles, HiLightningBolt } from "react-icons/hi"
+import aman from "../assets/aman.jpeg"
+import amrit from "../assets/amrit.jpeg"
+import faizaan from "../assets/faizaan.jpeg"
+import chinmaye from "../assets/chinmaye.jpeg"
+import sparsh from "../assets/sparsh.jpeg"
 
 export default function Home() {
   return (
@@ -377,7 +382,7 @@ function TeamSection() {
       name: "Amrit Nanda",
       role: "CEO",
       bio: "Aspiring leader, SIH-qualified, with a knack for decisive, creative, and composed leadership, consistently among the top performers.",
-      image: "",
+      image: amrit,
       linkedin: "https://www.linkedin.com/in/amrit-nanda-118564332/",
       twitter: "Take a look at Amrit (@AmritSnanda): https://x.com/AmritSnanda?t=dQa8e7dsajgIsyBfZ6hgXg&s=08"
     },
@@ -385,15 +390,15 @@ function TeamSection() {
       name: "Faizaan Nasir",
       role: "CIO",
       bio: "Winner of the Interhouse Cryptography Hackathon with a strong academic record and experience in secure applications, data visualization, and cloud-based solutions.",
-      image: "/team/sarah.jpg",
+      image: faizaan,
       linkedin: "https://www.linkedin.com/in/faizaan-nasir-b88870220/",
       twitter: ""
     },
     {
       name: "Aman Giri",
       role: "CTO",
-      bio: "PhD in Applied Cryptography, leading research in keyless authentication and ZK-SNARK implementations.",
-      image: "/team/marcus.jpg",
+      bio: "Brings hands-on experience in quantum technologies and deep expertise in solving complex challenges using zero-knowledge proofs.",
+      image: aman,
       linkedin: "https://www.linkedin.com/in/amanxgiri/",
       twitter: ""
     },
@@ -401,7 +406,7 @@ function TeamSection() {
       name: "Chinmaye Sharma",
       role: "COO",
       bio: "Specializing in building scalable operations, optimizing workflows, and driving growth for zero-knowledge proof ventures.",
-      image: "/team/emily.jpg",
+      image: chinmaye,
       linkedin: "https://www.linkedin.com/in/chinmaye-sharma-2b9879379/",
       twitter: ""
     },
@@ -409,7 +414,7 @@ function TeamSection() {
       name: "Sparsh Samaddar",
       role: "CMO",
       bio: "Background in digital marketing, community building, and developer ecosystem growth.",
-      image: "/team/emily.jpg",
+      image: sparsh,
       linkedin: "https://www.linkedin.com/in/sparsh-samaddar-48a793309/",
       twitter: ""
     }
@@ -437,9 +442,16 @@ function TeamSection() {
               {/* Profile Image */}
               <div className="relative w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden bg-gradient-to-r from-purple-400 to-pink-400 p-1">
                 <div className="w-full h-full rounded-full bg-gray-600 flex items-center justify-center">
-                  <span className="text-2xl font-bold text-white">
+                  {/* <span className="text-2xl font-bold text-white">
                     {member.name.split(' ').map(n => n[0]).join('')}
-                  </span>
+                  </span> */}
+                  {
+                    member.image ? (<Image src={member.image} alt={member.name} layout="fill" objectFit="cover" />) : (
+                      <span className="text-2xl font-bold text-white">
+                        {member.name.split(' ').map(n => n[0]).join('')}
+                      </span>
+                    )
+                  }
                 </div>
               </div>
 
